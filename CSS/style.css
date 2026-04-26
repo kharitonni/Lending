@@ -1,0 +1,83 @@
+#preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; /* Располагает элементы горизонтально */
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center; /* Вертикальное центрирование */
+    background-color: white;
+}
+
+#preloader.hide-preloader{
+display: none; /* Прелоадер пропадет с дисплея */
+}
+
+.center{
+    display: flex; /* Располагает элементы горизонтально */
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center; /* Вертикальное центрирование */
+}
+body{
+    font-family: "Playwrite IE", cursive;
+    background-color:#1E1E1E;
+    font-weight: 300; /*толщина шрифта*/
+    font-size: 18px; /*размер шрифта*/
+    line-height: 25px; /*высота строки*/
+    color: black; /*цвет текста*/
+    margin: 0; /*отступы вокруг элемента*/
+    padding: 0; /*внутренние отступы элемента*/
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.header{
+    padding: 15px; /* Отступы от края */
+    margin: 0 auto;
+    background-color:#1E1E1E;
+
+    display: flex; /* Располагает элементы горизонтально */
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center; /* Вертикальное центрирование */
+    gap: 100px; /* интервалы между элементами */
+
+    position: sticky;
+    top: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center; /* Вертикальное центрирование */
+    gap: 100px;
+}
+
+.about{
+    background-color: #8f9392;
+    padding: 50px; /* Отступы от края */
+    font-size: 20px; /*размер шрифта*/
+
+    display: flex;
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: top; /* Вертикальное центрирование */
+    gap: 100px;
+}
+
+.circular-image {
+    width: 350px; /* ширина */
+    height: 350px; /* высота */
+    border-radius: 50%; /* Делает изображение круглым */
+    border: 4px solid #312d25; /* рамка */
+    object-fit: cover; /* Обрезает изображение, сохраняя пропорции */
+}
+
+
